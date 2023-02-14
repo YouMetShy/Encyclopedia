@@ -1,0 +1,44 @@
+<template name="addAnimal">
+    <div class="row justify-content-center">
+        <div class="col-lg-3 text-center">
+            <button class="btn btn-primary js-addModal">Add an Animal</button>
+        </div>
+    </div>
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-lg-10 text-center imgFrame overflow-hidden">
+                            <img id="profImg" class="w-100" src="profile.png" alt="">
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">image</span>
+                        <input id="image" type="text" class="form-control" placeholder="Image URL" aria-label="image">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Animal Name</span>
+                        <input id="Aname" type="text" aria-label="Animal" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Species</span>
+                        <input id="Sname" type="text" aria-label="Species" class="form-control">
+                    </div>
+                     <div class="input-group">
+                        <span class="input-group-text">Description</span>
+                        <input id="Description" type="text" aria-label="Description" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary js-saveAnimal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
